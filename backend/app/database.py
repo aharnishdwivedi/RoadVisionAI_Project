@@ -13,28 +13,29 @@ load_dotenv()
 # Database configuration
 DATABASE_CONFIG = {
     "username": "root",
-    "password": "admin", 
+    "password": "satyam2000", 
     "database": "road_vision_ai",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "port": 3306
 }
 
-# Try MySQL first, fallback to SQLite with MySQL schema
+# MySQL connection only - no fallback
+DATABASE_URL = f"mysql+pymysql://{DATABASE_CONFIG['username']}:{DATABASE_CONFIG['password']}@{DATABASE_CONFIG['host']}:{DATABASE_CONFIG['port']}/{DATABASE_CONFIG['database']}?charset=utf8mb4"
+
 try:
-    DATABASE_URL = f"mysql+pymysql://{DATABASE_CONFIG['username']}:{DATABASE_CONFIG['password']}@{DATABASE_CONFIG['host']}:{DATABASE_CONFIG['port']}/{DATABASE_CONFIG['database']}?charset=utf8mb4"
     engine = create_engine(DATABASE_URL, echo=False, pool_pre_ping=True)
     # Test connection
     with engine.connect() as conn:
-        conn.execute("SELECT 1")
-    print("✓ Connected to MySQL database")
+        from sqlalchemy import text
+        conn.execute(text("SELECT 1"))
+    print("✅ Connected to MySQL database on localhost")
     DB_TYPE = "mysql"
 except Exception as e:
-    print(f"⚠ MySQL connection failed: {e}")
-    print("📁 Using SQLite with MySQL-compatible schema")
-    DATABASE_URL = "sqlite:///./road_vision_ai.db"
-    engine = create_engine(DATABASE_URL, echo=False, connect_args={"check_same_thread": False})
-    DB_TYPE = "sqlite"
+    print(f"❌ MySQL connection failed: {e}")
+    print("💡 Please ensure MySQL is running on localhost:3306 with credentials root/satyam2000")
+    print("💡 Create database: CREATE DATABASE road_vision_ai;")
+    raise Exception(f"MySQL connection required but failed: {e}")
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
