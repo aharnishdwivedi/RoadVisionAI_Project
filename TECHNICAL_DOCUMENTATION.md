@@ -69,9 +69,10 @@ CREATE TABLE alerts (
   - **Traffic Analysis**: Vehicle counting and flow analysis
 
 ### 3. Database Storage (`db_storage.py`)
-- Persistent storage of results and configurations
-- Optimized queries with connection pooling
-- Performance logging and error handling
+- **Direct SQL storage only** - No in-memory result caching
+- All AI model results stored immediately to MySQL database
+- Optimized queries with connection pooling and performance logging
+- Real-time data persistence for scalability
 
 ### 4. API Endpoints (`main.py`)
 ```python
@@ -219,17 +220,31 @@ curl "http://localhost:8000/streams"
 }
 ```
 
+## Data Storage Architecture
+
+### Database-Only Storage
+- **No In-Memory Caching**: All results stored directly to MySQL database
+- **Real-time Persistence**: AI model outputs immediately written to SQL
+- **Scalable Design**: Database handles all data persistence and retrieval
+- **Data Flow**: Frame → AI Models → Direct SQL Insert → API Retrieval
+
+### Storage Tables
+- **stream_results**: All AI model outputs with timestamps
+- **streams**: Stream configurations and status
+- **alerts**: Generated alerts from AI analysis
+
 ## Performance Specifications
 
 ### Scalability
 - **Concurrent Streams**: 10+ simultaneous video streams
-- **Processing**: Multi-threaded AI inference
-- **Database**: Connection pooling with MySQL
-- **Memory**: Optimized frame processing
+- **Processing**: Multi-threaded AI inference with direct SQL storage
+- **Database**: Connection pooling with MySQL for high throughput
+- **Memory**: Optimized frame processing with zero result caching
 
 ### Response Times
 - **API Endpoints**: < 50ms average
 - **AI Processing**: 100-200ms per frame
+- **Database Inserts**: < 5ms per result
 - **Database Queries**: < 10ms average
 - **Frontend Updates**: 3-10 second intervals
 
