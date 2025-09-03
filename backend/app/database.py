@@ -12,10 +12,10 @@ load_dotenv()
 
 # Database configuration
 DATABASE_CONFIG = {
-    "username": "root",
+    "username": "admin",
     "password": "satyam2000", 
     "database": "road_vision_ai",
-    "host": "127.0.0.1",
+    "host": "roadvisionai.cmre84si2720.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "port": 3306
 }
