@@ -29,6 +29,17 @@ export async function stopStream(stream_id: string) {
 }
 
 export async function getResults(stream_id: string) {
-  const res = await fetch(`${API_BASE}/results/${stream_id}`);
-  return res.json();
+  try {
+    console.log(`Fetching results for stream: ${stream_id} from ${API_BASE}/results/${stream_id}`);
+    const res = await fetch(`${API_BASE}/results/${stream_id}?limit=10`);
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+    }
+    const data = await res.json();
+    console.log(`Got ${data.results?.length || 0} results for ${stream_id}`);
+    return data;
+  } catch (error) {
+    console.error(`Error fetching results for ${stream_id}:`, error);
+    return { results: [] };
+  }
 }

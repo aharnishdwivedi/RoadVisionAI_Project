@@ -77,10 +77,25 @@ function ResultCard({ result }) {
 
 function StreamRow({ s }) {
   const [results, setResults] = useState([])
-  useInterval(async () => {
-    const data = await getResults(s.stream_id)
-    setResults(data.results.slice(-8))
-  }, 5000)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
+  
+  const fetchResults = async () => {
+    setLoading(true)
+    setError(null)
+    try {
+      const data = await getResults(s.stream_id)
+      setResults(data.results.slice(-8))
+      console.log(`Updated results for ${s.stream_id}:`, data.results.length)
+    } catch (err) {
+      setError(err.message)
+      console.error(`Failed to fetch results for ${s.stream_id}:`, err)
+    } finally {
+      setLoading(false)
+    }
+  }
+  
+  useInterval(fetchResults, 10000) // Auto-refresh every 10 seconds
 
   // Group results by model to show latest from each
   const latestResults = {}
@@ -97,15 +112,22 @@ function StreamRow({ s }) {
       <td>{s.models.join(', ')}</td>
       <td>{s.running ? 'Yes' : 'No'}</td>
       <td style={{ maxWidth: '400px' }}>
+        {loading && <div style={{ color: '#007bff', fontStyle: 'italic' }}>Loading...</div>}
+        {error && <div style={{ color: '#dc3545', fontStyle: 'italic' }}>Error: {error}</div>}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
           {Object.values(latestResults).map((result, i) => (
             <ResultCard key={i} result={result} />
           ))}
         </div>
-        {results.length === 0 && <div style={{ color: '#999', fontStyle: 'italic' }}>No results yet...</div>}
+        {results.length === 0 && !loading && !error && <div style={{ color: '#999', fontStyle: 'italic' }}>No results yet...</div>}
       </td>
       <td>
-        <button onClick={() => stopStream(s.stream_id)}>Stop</button>
+        <button onClick={fetchResults} disabled={loading} style={{ marginRight: '8px', backgroundColor: '#28a745', color: 'white', border: 'none', padding: '4px 8px', borderRadius: '4px' }}>
+          {loading ? 'Loading...' : 'Refresh Results'}
+        </button>
+        <button onClick={() => stopStream(s.stream_id)} style={{ backgroundColor: '#dc3545', color: 'white', border: 'none', padding: '4px 8px', borderRadius: '4px' }}>
+          Stop
+        </button>
       </td>
     </tr>
   )

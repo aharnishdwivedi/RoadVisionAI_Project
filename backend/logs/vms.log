@@ -794,3 +794,139 @@
 2025-09-03 23:30:52,272 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756922451787' - high_defect: Defect score: 0.961
 2025-09-03 23:30:52,469 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756922451021' - high_defect: Defect score: 0.749
 2025-09-03 23:30:52,502 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756922451787' - high_defect: Defect score: 0.756
+2025-09-03 23:34:22,624 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 23:34:22,625 - VMS.Stream - INFO - 🎬 Starting stream 's-1756922662619' from source 'video_test'
+2025-09-03 23:34:22,625 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:34:22,634 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 4, Threads: 4
+2025-09-03 23:34:22,638 - VMS.Stream - ERROR - ❌ Stream 's-1756922662619' error: Failed to open video source: video_test (source: video_test)
+2025-09-03 23:34:22,639 - VMS.Stream - INFO - 🎬 Starting stream 's-1756922662619' from source 'synthetic_fallback'
+2025-09-03 23:34:22,639 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:35:31,054 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 23:35:31,054 - VMS.Stream - INFO - 🎬 Starting stream 's-1756922731050' from source 'video_test1'
+2025-09-03 23:35:31,054 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:35:31,056 - VMS.Stream - ERROR - ❌ Stream 's-1756922731050' error: Failed to open video source: video_test1 (source: video_test1)
+2025-09-03 23:35:31,059 - VMS.Stream - INFO - 🎬 Starting stream 's-1756922731050' from source 'synthetic_fallback'
+2025-09-03 23:35:31,059 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:35:31,062 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 5, Threads: 5
+2025-09-03 23:35:36,269 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 23:35:36,269 - VMS.Stream - INFO - 🎬 Starting stream 's-1756922736264' from source 'video_test'
+2025-09-03 23:35:36,269 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:35:36,273 - VMS.Stream - ERROR - ❌ Stream 's-1756922736264' error: Failed to open video source: video_test (source: video_test)
+2025-09-03 23:35:36,273 - VMS.Stream - INFO - 🎬 Starting stream 's-1756922736264' from source 'synthetic_fallback'
+2025-09-03 23:35:36,273 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:35:36,274 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 6, Threads: 6
+2025-09-03 23:35:38,004 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:35:38,004 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922731050' - Reason: user_request
+2025-09-03 23:35:38,137 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 5, Threads: 5
+2025-09-03 23:35:40,903 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:35:40,906 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922736264' - Reason: user_request
+2025-09-03 23:35:40,974 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 4, Threads: 4
+2025-09-03 23:35:42,700 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:35:42,700 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922451021' - Reason: user_request
+2025-09-03 23:35:42,715 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922451021' - Reason: completed_after_291.1s
+2025-09-03 23:35:42,720 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 3, Threads: 3
+2025-09-03 23:35:44,936 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:35:44,936 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922451787' - Reason: user_request
+2025-09-03 23:35:45,060 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922451787' - Reason: completed_after_292.8s
+2025-09-03 23:35:45,067 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 2, Threads: 2
+2025-09-03 23:39:59,284 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:39:59,284 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922430521' - Reason: user_request
+2025-09-03 23:39:59,495 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922430521' - Reason: completed_after_567.3s
+2025-09-03 23:39:59,498 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 1, Threads: 1
+2025-09-03 23:41:40,605 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:41:40,605 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756922662619' - Reason: user_request
+2025-09-03 23:41:40,634 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 0, Threads: 0
+2025-09-03 23:42:39,036 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 23:42:39,037 - VMS.Stream - INFO - 🎬 Starting stream 'car_video' from source '/Users/aharnishdwivedi/Desktop/RoadVisionAI_Project/sample_inputs/car.mp4'
+2025-09-03 23:42:39,037 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 23:42:39,039 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 1, Threads: 1
+2025-09-03 23:42:39,107 - VMS.Stream - INFO - ✅ Stream 'car_video' connected successfully to source '/Users/aharnishdwivedi/Desktop/RoadVisionAI_Project/sample_inputs/car.mp4'
+2025-09-03 23:42:39,683 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:39,917 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:40,661 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:41,157 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:45,966 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:46,731 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:42:48,232 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:42:48,742 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:48,985 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:49,239 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:49,719 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:50,491 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:51,998 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:52,766 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:53,289 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:53,561 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:55,576 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:42:56,817 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:00,158 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:00,658 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:01,683 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:02,460 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:02,722 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:03,748 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:07,791 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:08,272 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:08,976 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:10,277 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 23:43:10,277 - VMS.Stream - INFO - 🎬 Starting stream 's-1756923190274' from source '0'
+2025-09-03 23:43:10,277 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:43:10,279 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 2, Threads: 2
+2025-09-03 23:43:11,527 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:11,760 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:11,799 - VMS.Stream - INFO - ✅ Stream 's-1756923190274' connected successfully to source '0'
+2025-09-03 23:43:11,831 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756923190274' - high_defect: Defect score: 0.928
+2025-09-03 23:43:12,062 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756923190274' - high_defect: Defect score: 0.774
+2025-09-03 23:43:13,219 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:15,522 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:15,765 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:17,719 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:18,745 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:19,240 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:20,263 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:20,782 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:22,586 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:24,860 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:26,577 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:30,742 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:31,703 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:32,908 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:33,152 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:34,381 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:34,633 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:35,115 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:35,352 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:36,780 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:37,492 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:38,223 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:38,473 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:38,949 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:39,192 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:39,678 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:41,382 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:41,621 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:41,864 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:42,836 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:43,331 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:46,073 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:46,326 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:43:48,809 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:51,611 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:55,661 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:58,470 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:58,953 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:43:59,979 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:00,490 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:44:02,030 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:03,064 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:03,319 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:04,575 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:04,833 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:05,341 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:44:06,884 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:44:07,654 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:09,592 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:11,278 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:11,754 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'car_video' - poor_road_condition: Condition: critical
+2025-09-03 23:44:13,648 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
+2025-09-03 23:44:14,124 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'car_video' - poor_road_condition: Condition: poor
