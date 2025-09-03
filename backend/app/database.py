@@ -20,9 +20,22 @@ DATABASE_CONFIG = {
     "port": 3306
 }
 
-DATABASE_URL = f"mysql+pymysql://{DATABASE_CONFIG['username']}:{DATABASE_CONFIG['password']}@{DATABASE_CONFIG['host']}:{DATABASE_CONFIG['port']}/{DATABASE_CONFIG['database']}"
+# Try MySQL first, fallback to SQLite with MySQL schema
+try:
+    DATABASE_URL = f"mysql+pymysql://{DATABASE_CONFIG['username']}:{DATABASE_CONFIG['password']}@{DATABASE_CONFIG['host']}:{DATABASE_CONFIG['port']}/{DATABASE_CONFIG['database']}?charset=utf8mb4"
+    engine = create_engine(DATABASE_URL, echo=False, pool_pre_ping=True)
+    # Test connection
+    with engine.connect() as conn:
+        conn.execute("SELECT 1")
+    print("✓ Connected to MySQL database")
+    DB_TYPE = "mysql"
+except Exception as e:
+    print(f"⚠ MySQL connection failed: {e}")
+    print("📁 Using SQLite with MySQL-compatible schema")
+    DATABASE_URL = "sqlite:///./road_vision_ai.db"
+    engine = create_engine(DATABASE_URL, echo=False, connect_args={"check_same_thread": False})
+    DB_TYPE = "sqlite"
 
-engine = create_engine(DATABASE_URL, echo=False)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 

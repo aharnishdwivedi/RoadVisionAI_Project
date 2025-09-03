@@ -21,26 +21,55 @@ class StreamWorker(threading.Thread):
         self._stop_event.set()
 
     def run(self) -> None:
-        cap = cv2.VideoCapture(self.source)
+        # Handle different source types
+        if self.source.isdigit():
+            # Webcam source (0, 1, 2, etc.)
+            source_int = int(self.source)
+            cap = cv2.VideoCapture(source_int)
+            # Set webcam properties for better compatibility on macOS
+            cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+            cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+            cap.set(cv2.CAP_PROP_FPS, 30)
+        else:
+            # File or RTSP source
+            cap = cv2.VideoCapture(self.source)
+        
         if not cap.isOpened():
-            # Try to interpret as image directory; fallback to synthetic frames
-            image_idx = 0
+            print(f"⚠ Failed to open video source: {self.source}")
+            # Fallback to synthetic frames for demo
             while not self._stop_event.is_set():
                 frame = np.random.randint(0, 255, (480, 640, 3), dtype=np.uint8)
                 self._process_frame(frame)
                 time.sleep(1.0 / self.fps)
             return
 
+        print(f"✓ Successfully opened video source: {self.source}")
         try:
+            frame_count = 0
             while not self._stop_event.is_set():
                 ret, frame = cap.read()
                 if not ret:
-                    cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-                    continue
+                    if self.source.isdigit():
+                        # For webcam, continue trying
+                        print(f"⚠ Failed to read from webcam {self.source}, retrying...")
+                        time.sleep(0.1)
+                        continue
+                    else:
+                        # For video files, loop back to start
+                        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+                        continue
+                
+                frame_count += 1
+                if frame_count % 30 == 0:  # Log every 30 frames
+                    print(f"📹 Processing frame {frame_count} from stream {self.stream_id}")
+                
                 self._process_frame(frame)
                 time.sleep(1.0 / self.fps)
+        except Exception as e:
+            print(f"❌ Error in stream {self.stream_id}: {e}")
         finally:
             cap.release()
+            print(f"🔴 Stream {self.stream_id} stopped")
 
     def _process_frame(self, frame):
         ts = time.time()
