@@ -76,8 +76,8 @@ def list_streams():
     return {"streams": stream_mgr.status()}
 
 @app.get("/results/{stream_id}")
-def get_results(stream_id: str):
-    return {"results": storage.get_results(stream_id)}
+def get_results(stream_id: str, limit: int = 20):
+    return {"results": storage.get_results(stream_id, limit)}
 
 @app.get("/alerts")
 def get_alerts():
