@@ -1,4 +1,4 @@
-export const API_BASE = 'https://54.159.177.183';
+export const API_BASE = 'https://akurian.com';
 
 export async function getHealth() {
   const res = await fetch(`${API_BASE}/health`);
