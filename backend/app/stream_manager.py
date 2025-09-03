@@ -5,6 +5,7 @@ import cv2
 import numpy as np
 from .model_manager import ModelManager
 from .db_storage import DatabaseStorage
+from .logger import vms_logger
 
 class StreamWorker(threading.Thread):
     def __init__(self, stream_id: str, source: str, models: List[str], model_mgr: ModelManager, storage: DatabaseStorage, fps: float = 5.0) -> None:
@@ -35,23 +36,25 @@ class StreamWorker(threading.Thread):
             cap = cv2.VideoCapture(self.source)
         
         if not cap.isOpened():
-            print(f"⚠ Failed to open video source: {self.source}")
+            vms_logger.log_stream_error(self.stream_id, f"Failed to open video source: {self.source}", self.source)
             # Fallback to synthetic frames for demo
+            vms_logger.log_stream_start(self.stream_id, "synthetic_fallback", self.models)
             while not self._stop_event.is_set():
                 frame = np.random.randint(0, 255, (480, 640, 3), dtype=np.uint8)
                 self._process_frame(frame)
                 time.sleep(1.0 / self.fps)
             return
 
-        print(f"✓ Successfully opened video source: {self.source}")
+        vms_logger.log_stream_success(self.stream_id, self.source)
         try:
             frame_count = 0
+            start_time = time.time()
             while not self._stop_event.is_set():
                 ret, frame = cap.read()
                 if not ret:
                     if self.source.isdigit():
                         # For webcam, continue trying
-                        print(f"⚠ Failed to read from webcam {self.source}, retrying...")
+                        vms_logger.log_stream_error(self.stream_id, f"Failed to read from webcam, retrying...", self.source)
                         time.sleep(0.1)
                         continue
                     else:
@@ -60,21 +63,37 @@ class StreamWorker(threading.Thread):
                         continue
                 
                 frame_count += 1
-                if frame_count % 30 == 0:  # Log every 30 frames
-                    print(f"📹 Processing frame {frame_count} from stream {self.stream_id}")
                 
+                # Process frame and measure time
+                frame_start = time.time()
                 self._process_frame(frame)
+                frame_time = time.time() - frame_start
+                
+                # Log frame processing metrics every 30 frames
+                if frame_count % 30 == 0:
+                    vms_logger.log_frame_processing(self.stream_id, frame_count, self.models, frame_time)
+                    
+                    # Log concurrent processing status
+                    active_threads = threading.active_count()
+                    vms_logger.log_concurrent_processing(self.stream_id, active_threads)
+                
                 time.sleep(1.0 / self.fps)
         except Exception as e:
-            print(f"❌ Error in stream {self.stream_id}: {e}")
+            vms_logger.log_stream_error(self.stream_id, f"Runtime error: {str(e)}", self.source)
         finally:
             cap.release()
-            print(f"🔴 Stream {self.stream_id} stopped")
+            runtime = time.time() - start_time
+            vms_logger.log_stream_stop(self.stream_id, f"completed_after_{runtime:.1f}s")
 
     def _process_frame(self, frame):
         ts = time.time()
         results = self.model_mgr.run_models(frame, self.models)
+        
         for model_name, summary in results.items():
+            # Log model inference
+            processing_time = summary.get('processing_time', 0)
+            vms_logger.log_model_inference(self.stream_id, model_name, processing_time, summary)
+            
             result_data = {
                 "stream_id": self.stream_id,
                 "model": model_name,
@@ -99,6 +118,7 @@ class StreamWorker(threading.Thread):
                         "severity": "high"
                     }
                     self.storage.add_alert(alert)
+                    vms_logger.log_alert_generated(self.stream_id, "high_defect", "high", f"Defect score: {defect_score}")
             
             elif model_name == "asset_detection":
                 objects = summary.get("objects", 0)
@@ -110,9 +130,34 @@ class StreamWorker(threading.Thread):
                         "severity": "medium"
                     }
                     self.storage.add_alert(alert)
+                    vms_logger.log_alert_generated(self.stream_id, "high_object_count", "medium", f"Object count: {objects}")
+            
+            elif model_name == "road_condition":
+                condition = summary.get("condition", "unknown")
+                if condition in ["poor", "critical"]:
+                    alert = {
+                        "stream_id": self.stream_id,
+                        "type": "poor_road_condition",
+                        "message": f"Poor road condition detected: {condition}",
+                        "severity": "high" if condition == "critical" else "medium"
+                    }
+                    self.storage.add_alert(alert)
+                    vms_logger.log_alert_generated(self.stream_id, "poor_road_condition", alert["severity"], f"Condition: {condition}")
+            
+            elif model_name == "traffic_analysis":
+                congestion = summary.get("congestion_level", 0)
+                if congestion > 0.8:  # High congestion
+                    alert = {
+                        "stream_id": self.stream_id,
+                        "type": "high_traffic_congestion",
+                        "message": f"High traffic congestion detected: {congestion:.2f}",
+                        "severity": "medium"
+                    }
+                    self.storage.add_alert(alert)
+                    vms_logger.log_alert_generated(self.stream_id, "high_traffic_congestion", "medium", f"Congestion level: {congestion:.2f}")
+                    
         except Exception as e:
-            # Log error but don't crash the stream
-            pass
+            vms_logger.log_stream_error(self.stream_id, f"Alert generation error: {str(e)}")
 
 class StreamManager:
     def __init__(self, model_mgr: ModelManager, storage: DatabaseStorage) -> None:

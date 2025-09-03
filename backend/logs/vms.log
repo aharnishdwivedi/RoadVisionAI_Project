@@ -1,0 +1,276 @@
+2025-09-03 22:56:51,211 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:56:51,211 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:56:51,211 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:56:51,211 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:57:01,514 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:57:01,514 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:57:01,514 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:57:01,514 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:57:09,998 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:57:09,998 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:57:09,998 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:57:09,998 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:57:17,010 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:57:17,010 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:57:17,010 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:57:17,010 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:57:38,345 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:57:38,345 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:57:38,345 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:57:38,345 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:57:55,122 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:57:55,122 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:57:55,122 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:57:55,122 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:58:12,659 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:58:12,659 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:58:12,659 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:58:12,659 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:58:20,354 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:58:20,354 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:58:20,354 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:58:20,354 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:58:29,824 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:58:29,824 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:58:29,824 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:58:29,824 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:58:40,039 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:58:40,039 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:58:40,039 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:58:40,039 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:59:20,276 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-03 22:59:20,276 - VMS.Main - INFO - 📊 Database Type: sqlite
+2025-09-03 22:59:20,276 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:59:20,276 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-03 22:59:42,529 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 22:59:42,529 - VMS.Stream - INFO - 🎬 Starting stream 'test_logging' from source '0'
+2025-09-03 22:59:42,529 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-03 22:59:42,534 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 1, Threads: 1
+2025-09-03 22:59:44,184 - VMS.Stream - INFO - ✅ Stream 'test_logging' connected successfully to source '0'
+2025-09-03 22:59:44,215 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - high_defect: Defect score: 0.922
+2025-09-03 22:59:45,621 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:46,317 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 22:59:47,022 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:48,651 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:50,054 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:50,524 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 22:59:51,222 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:52,134 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:53,060 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:53,292 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:53,521 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:53,991 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:56,092 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 22:59:56,323 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 22:59:57,257 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 22:59:59,791 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:01,894 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:02,593 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:04,227 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:06,066 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:06,534 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:07,002 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:10,269 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:10,736 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:12,134 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:13,070 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:13,539 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:13,767 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:14,707 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:14,934 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:15,406 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:15,873 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:16,577 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:16,807 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:17,746 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:17,977 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:18,209 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:20,783 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:21,945 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:22,880 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:23,581 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:24,046 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:24,279 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:25,215 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:25,916 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:27,081 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:28,953 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:30,351 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:31,752 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:32,688 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:33,384 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:33,849 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:34,318 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:34,784 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:37,586 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:37,820 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:39,220 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:41,323 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:43,433 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:44,826 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:47,394 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:49,465 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:49,691 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:49,929 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:50,863 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:53,197 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:53,431 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:57,168 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:57,399 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:58,994 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:00:59,208 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:00:59,863 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:00,073 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:01,847 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:03,577 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:04,011 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:05,958 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:06,823 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:10,834 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:12,351 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:12,821 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:15,201 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:16,543 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:17,203 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:18,501 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:19,580 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:19,797 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:21,144 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:21,578 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:21,831 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:22,264 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:23,131 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:23,563 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:24,000 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:25,341 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:26,029 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:26,461 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:27,327 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:28,620 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:28,837 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:30,230 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:31,603 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:33,588 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:34,018 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:34,453 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:34,882 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:35,535 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:37,090 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:37,737 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:38,170 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:40,334 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:40,980 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:41,414 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:42,061 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:42,495 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:42,940 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:43,183 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:44,117 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:44,349 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:45,051 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:45,517 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:45,750 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:46,918 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:47,838 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:49,362 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:49,831 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:50,262 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - high_defect: Defect score: 0.907
+2025-09-03 23:01:50,961 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:52,614 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:52,846 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:55,414 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:56,112 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:57,746 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:58,666 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:01:59,369 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:01:59,616 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:00,071 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:03,730 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:04,653 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:05,337 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:06,035 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:08,636 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:09,110 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:09,339 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:13,300 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:13,768 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:14,713 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:15,420 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:15,894 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:17,028 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:17,257 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:20,031 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:20,483 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:21,199 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:21,351 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 23:02:21,352 - VMS.Stream - INFO - 🎬 Starting stream 's-1756920741344' from source '0'
+2025-09-03 23:02:21,352 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:02:21,357 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 2, Threads: 2
+2025-09-03 23:02:21,684 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - high_defect: Defect score: 0.944
+2025-09-03 23:02:21,903 - VMS.Stream - INFO - ✅ Stream 's-1756920741344' connected successfully to source '0'
+2025-09-03 23:02:21,906 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - high_defect: Defect score: 1
+2025-09-03 23:02:21,934 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756920741344' - high_defect: Defect score: 0.924
+2025-09-03 23:02:22,814 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:23,293 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:24,196 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:26,257 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:29,033 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:29,498 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:29,963 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:29,997 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-03 23:02:29,997 - VMS.Stream - INFO - 🎬 Starting stream 's-1756920749994' from source '0'
+2025-09-03 23:02:29,997 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-03 23:02:30,000 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 3, Threads: 3
+2025-09-03 23:02:30,318 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - high_defect: Defect score: 1
+2025-09-03 23:02:30,322 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756920741344' - high_defect: Defect score: 0.934
+2025-09-03 23:02:30,539 - VMS.Stream - INFO - ✅ Stream 's-1756920749994' connected successfully to source '0'
+2025-09-03 23:02:30,542 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - high_defect: Defect score: 0.978
+2025-09-03 23:02:30,546 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756920741344' - high_defect: Defect score: 0.983
+2025-09-03 23:02:30,570 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756920749994' - high_defect: Defect score: 1
+2025-09-03 23:02:31,204 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:31,930 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:32,864 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:33,777 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:34,998 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:02:34,999 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756920741344' - Reason: user_request
+2025-09-03 23:02:35,143 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756920741344' - Reason: completed_after_13.2s
+2025-09-03 23:02:35,147 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 2, Threads: 2
+2025-09-03 23:02:35,563 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:02:35,564 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756920741344' - Reason: user_request
+2025-09-03 23:02:35,565 - VMS.Stream - ERROR - ❌ Stream 's-1756920741344' error: Stream not found or already stopped
+2025-09-03 23:02:36,298 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:37,362 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-03 23:02:37,362 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756920749994' - Reason: user_request
+2025-09-03 23:02:37,398 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756920749994' - Reason: completed_after_6.9s
+2025-09-03 23:02:37,400 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 1, Threads: 1
+2025-09-03 23:02:37,900 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:38,136 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:41,651 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:41,881 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:43,302 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:44,214 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:44,449 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:45,615 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:46,794 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:49,088 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:50,024 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:50,256 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:50,956 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:51,188 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:51,895 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:52,335 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:53,258 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:02:56,729 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:57,663 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:02:58,597 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:03:00,240 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:03:00,701 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:03:02,995 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:03:03,461 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:03:04,162 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:03:04,395 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:03:06,461 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:03:07,631 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 'test_logging' - poor_road_condition: Condition: critical
+2025-09-03 23:03:10,899 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:03:13,237 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
+2025-09-03 23:03:14,868 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'test_logging' - poor_road_condition: Condition: poor
