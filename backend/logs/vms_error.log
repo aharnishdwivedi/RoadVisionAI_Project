@@ -2742,3 +2742,17 @@
 2025-09-04 02:08:01,596 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'Video_multi' - poor_road_condition: Condition: poor
 2025-09-04 02:08:19,349 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'Video_multi' - poor_road_condition: Condition: poor
 2025-09-04 02:08:32,535 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'Video_multi' - poor_road_condition: Condition: poor
+2025-09-04 09:53:51,324 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-04 09:53:51,324 - VMS.Main - INFO - 📊 Database Type: mysql
+2025-09-04 09:53:51,324 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-04 09:53:51,324 - VMS.Main - INFO - ✅ System Ready for Stream Processing
+2025-09-04 09:55:01,300 - VMS.API - INFO - 🌐 API POST /streams/start from 127.0.0.1
+2025-09-04 09:55:01,301 - VMS.Stream - INFO - 🎬 Starting stream 's-1756959901295' from source '0'
+2025-09-04 09:55:01,302 - VMS.Stream - INFO - 🔧 Models enabled: asset_detection, defect_analysis
+2025-09-04 09:55:02,630 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 1, Threads: 1
+2025-09-04 09:55:03,094 - VMS.Stream - INFO - ✅ Stream 's-1756959901295' connected successfully to source '0'
+2025-09-04 09:55:06,723 - VMS.Main - WARNING - 🚨 ALERT [HIGH] - Stream 's-1756959901295' - high_defect: Defect score: 0.955
+2025-09-04 09:55:57,015 - VMS.API - INFO - 🌐 API POST /streams/stop from 127.0.0.1
+2025-09-04 09:55:57,017 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756959901295' - Reason: user_request
+2025-09-04 09:55:57,911 - VMS.Stream - INFO - 🛑 Stopping stream 's-1756959901295' - Reason: completed_after_54.8s
+2025-09-04 09:55:59,549 - VMS.Main - INFO - 📈 Scaling Metrics - Active Streams: 0, Threads: 0

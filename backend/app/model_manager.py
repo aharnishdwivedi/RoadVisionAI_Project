@@ -1,41 +1,92 @@
 import time
 from typing import Dict, Callable, Any, List
 import numpy as np
+from ultralytics import YOLO
+import os
 
 FakeResult = Dict[str, Any]
 
 class ModelManager:
     def __init__(self) -> None:
         self.model_registry: Dict[str, Callable[[np.ndarray], FakeResult]] = {}
+        self.yolo_model = None
+        self._load_yolo_model()
         self._register_default_models()
+    
+    def _load_yolo_model(self) -> None:
+        """Load YOLO model for real object detection"""
+        try:
+            self.yolo_model = YOLO('yolov8n.pt')  # Downloads automatically on first run
+            print("✅ YOLO model loaded successfully")
+        except Exception as e:
+            print(f"⚠️ Failed to load YOLO model: {e}")
+            self.yolo_model = None
 
     def _register_default_models(self) -> None:
         # Enhanced AI models for VMS
         def asset_detection(frame: np.ndarray) -> FakeResult:
-            h, w = frame.shape[:2]
-            # Simulate more realistic object detection
-            base_objects = max(1, (h * w) // 200000)
-            # Add some randomness to simulate real detection
-            import random
-            variation = random.randint(-2, 5)
-            objects = max(0, base_objects + variation)
+            """Real YOLO object detection"""
+            start_time = time.time()
             
-            # Simulate bounding boxes
-            boxes = []
-            for i in range(min(objects, 10)):  # Limit to 10 for display
-                x = random.randint(0, w-50)
-                y = random.randint(0, h-50)
-                boxes.append({
-                    "x": x, "y": y, "width": 50, "height": 50,
-                    "confidence": round(random.uniform(0.6, 0.95), 2),
-                    "class": random.choice(["vehicle", "person", "sign", "barrier"])
-                })
+            if self.yolo_model is None:
+                # Fallback to mock data if YOLO failed to load
+                import random
+                h, w = frame.shape[:2]
+                return {
+                    "objects": random.randint(1, 5),
+                    "detections": [{
+                        "x": random.randint(0, w-50),
+                        "y": random.randint(0, h-50),
+                        "width": 50, "height": 50,
+                        "confidence": round(random.uniform(0.6, 0.95), 2),
+                        "class": "mock_object"
+                    }],
+                    "processing_time": 0.1,
+                    "status": "mock_fallback"
+                }
             
-            return {
-                "objects": objects,
-                "detections": boxes,
-                "processing_time": round(random.uniform(0.05, 0.15), 3)
-            }
+            try:
+                # Run YOLO inference
+                results = self.yolo_model(frame, verbose=False)
+                
+                detections = []
+                for r in results:
+                    if r.boxes is not None:
+                        boxes = r.boxes
+                        for box in boxes:
+                            x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
+                            conf = float(box.conf[0].cpu().numpy())
+                            cls = int(box.cls[0].cpu().numpy())
+                            
+                            # Filter out low confidence detections
+                            if conf > 0.3:
+                                detections.append({
+                                    "x": int(x1),
+                                    "y": int(y1),
+                                    "width": int(x2 - x1),
+                                    "height": int(y2 - y1),
+                                    "confidence": round(conf, 2),
+                                    "class": self.yolo_model.names[cls]
+                                })
+                
+                processing_time = time.time() - start_time
+                
+                return {
+                    "objects": len(detections),
+                    "detections": detections[:10],  # Limit to 10 for display
+                    "processing_time": round(processing_time, 3),
+                    "status": "yolo_real"
+                }
+                
+            except Exception as e:
+                # Fallback on error
+                print(f"YOLO inference error: {e}")
+                return {
+                    "objects": 0,
+                    "detections": [],
+                    "processing_time": 0.1,
+                    "status": "error"
+                }
 
         def defect_analysis(frame: np.ndarray) -> FakeResult:
             mean_val = float(frame.mean())
