@@ -2742,3 +2742,7 @@
 2025-09-04 02:08:01,596 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'Video_multi' - poor_road_condition: Condition: poor
 2025-09-04 02:08:19,349 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'Video_multi' - poor_road_condition: Condition: poor
 2025-09-04 02:08:32,535 - VMS.Main - WARNING - 🚨 ALERT [MEDIUM] - Stream 'Video_multi' - poor_road_condition: Condition: poor
+2025-09-04 10:19:44,686 - VMS.Main - INFO - 🚀 VMS System Starting Up
+2025-09-04 10:19:44,687 - VMS.Main - INFO - 📊 Database Type: mysql
+2025-09-04 10:19:44,687 - VMS.Main - INFO - 🤖 Available AI Models: asset_detection, defect_analysis, road_condition, traffic_analysis
+2025-09-04 10:19:44,687 - VMS.Main - INFO - ✅ System Ready for Stream Processing
