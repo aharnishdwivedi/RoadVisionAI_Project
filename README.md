@@ -62,5 +62,5 @@ Open the dashboard (shown by vite output, usually `http://localhost:5173`).
 
 ## Notes
 - If a video source cannot be opened, the system generates synthetic frames to keep the pipeline running for demo/testing.
-- Results are stored in-memory for simplicity. Replace `InMemoryStorage` with a database for persistence.
+- Results are stored in a MySQL database for persistence.
 - Increase per-stream FPS or number of streams as needed; each stream runs in its own daemon thread.
