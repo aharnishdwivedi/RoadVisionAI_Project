@@ -303,28 +303,6 @@ RoadVisionAI_Project/
    # Verify CORS settings in main.py
    ```
 
-## Deployment Notes
-
-### Production Considerations
-- Use production WSGI server (Gunicorn/uWSGI)
-- Configure reverse proxy (Nginx)
-- Set up SSL certificates
-- Use production database (AWS RDS)
-- Implement proper logging and monitoring
-
-### AWS Deployment Options
-- **Backend**: AWS ECS/Fargate or EC2
-- **Frontend**: AWS Amplify or S3 + CloudFront
-- **Database**: AWS RDS MySQL
-- **Storage**: AWS S3 for video files
-- **Monitoring**: AWS CloudWatch
-
-## Security Considerations
-- API rate limiting
-- Input validation for video sources
-- Database connection security
-- CORS configuration
-- File upload restrictions
 
 ---
 
